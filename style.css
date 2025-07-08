@@ -469,3 +469,93 @@ body {
 .link-button i {
   font-size: 1.2rem;
 }
+
+/* Ekran genişliği 768px veya daha az olduğunda bu stiller geçerli olur */
+@media (max-width: 768px) {
+
+  /* --- Ana Başlık ve Karşılama Alanı --- */
+  .hero-container {
+    flex-direction: column; /* Profil ve bilgileri alt alta sırala */
+    gap: 30px;
+    text-align: center; /* Tüm metinleri ortala */
+  }
+
+  .profile-section {
+    margin-right: 0; /* Aradaki boşluğu kaldır */
+  }
+
+  .info-section {
+    align-items: center; /* "Hakkımda" yazısını ortala */
+  }
+
+  .header-content {
+    text-align: center; /* Başlığı ve alt başlığı ortala */
+  }
+
+  .header-content.scrolled {
+    /* Kaydırma sonrası başlığın ortada kalmasını sağla */
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) scale(0.6);
+    transform-origin: center top;
+  }
+
+  .main-title {
+    font-size: 2.5rem; /* Mobil için yazı boyutunu küçült */
+  }
+
+  .subtitle {
+    font-size: 1.2rem; /* Mobil için yazı boyutunu küçült */
+    height: auto; /* Yüksekliği içeriğe göre ayarla */
+    min-height: 50px; /* Zıplamayı önlemek için minimum yükseklik */
+  }
+
+  .about-me-section p {
+    font-size: 0.9rem; /* Mobil için yazı boyutunu küçült */
+    max-width: 100%;
+  }
+
+  /* --- Yan Menü --- */
+  .main-menu {
+    display: none; /* Mobilde yan menüyü tamamen gizle */
+  }
+
+  /* --- Portfolyo Bölümü --- */
+  .portfolio-grid {
+    /* Kartları tek sütun halinde alt alta sırala */
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .content-section {
+    padding: 80px 20px; /* İç boşlukları ayarla */
+  }
+
+  /* --- Footer Bölümü --- */
+  .footer-container {
+    flex-direction: column; /* Sütunları alt alta sırala */
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-column h4::after {
+    left: 50%;
+    transform: translateX(-50%); /* Başlık altı çizgilerini ortala */
+  }
+
+  .footer-column .social-media-links {
+    justify-content: center; /* Sosyal medya ikonlarını ortala */
+  }
+
+  /* --- Modal Pencere --- */
+  .modal-content {
+    width: 95%; /* Modalı biraz daha genişlet */
+    margin: 5vh auto; /* Dikey boşluğu azalt */
+    padding: 20px;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+}
