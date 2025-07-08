@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalTitle = modal.querySelector('.modal-title');
     const modalDescription = modal.querySelector('.modal-description');
     const modalMediaContainer = modal.querySelector('.modal-media-container');
+    const modalLinksContainer = modal.querySelector('.modal-links');
 
     let modalSwiper = null;
     
@@ -134,7 +135,10 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Patrol Officer',
             description: 'Chase Down Criminals and Protect the Streets: Track down suspects, stop speeders, and enforce the law in your patrol car. Take on dangerous car chases, write tickets, and perform body searches. Use your police skills to keep the city safe from crime.',
             images: ['images/patrol/img0.png',"images/patrol/img1.png","images/patrol/img2.png"],
-            video: 'images/patrol/video0.mp4'
+            video: 'images/patrol/video0.mp4',
+            link_ios: 'https://apps.apple.com/tr/app/patrol-officer-polis-oyunu/id6450002086',
+            link_aos: 'https://play.google.com/store/apps/details?id=com.flatgames.patrolofficer',
+            link_github: '' // Github linki yoksa boş bırakılır.
         },
         '2': {
             title: 'Arcade Idle Framework',
@@ -157,7 +161,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `,
             images: ['images/aif/img0.png',"images/aif/img1.png","images/aif/img2.png"],
-            video: 'images/aif/video0.mp4'
+            video: 'images/aif/video0.mp4',
+            link_ios: '',
+            link_aos: '',
+            link_github: 'https://github.com/SemihKC94/AIF-v01.git' // Github linki yoksa boş bırakılır.
         },
         '3': {
             title: 'Airport Deputy',
@@ -187,9 +194,33 @@ document.addEventListener('DOMContentLoaded', function() {
             </p>
             `,
             images: ['images/ad/img0.png',"images/ad/img1.png","images/ad/img2.png"],
-            video: 'images/ad/video0.mp4'
+            video: 'images/ad/video0.mp4',
+            link_ios: 'https://apps.apple.com/tr/app/airport-deputy-safe-terminal/id6642698584',
+            link_aos: 'https://play.google.com/store/apps/details?id=com.flatgames.airport.deputy.safe.terminal',
+            link_github: '' // Github linki yoksa boş bırakılır.
         },
         '4': {
+            title: 'Wedding Rush 3D!',
+            description: `
+            <p>Ever thought what your wedding day might feel like? Or thought about how your dress will look? Here’s the chance!
+            </p>
+            <p>
+            It’s time to experience Wedding Rush! Marriage is never easy, especially the wedding day.
+            </p>
+            <p>
+            Plan your dream wedding and overcome obstacles to live your happiest day and be happily ever after. Easy & fun wedding mini games made to entertain you!
+            </p>
+            <p>
+            But remember, there will be challenges waiting for you to ruin your wedding day, only you can overcome them by playing! It’s all up to you to overcome the Wedding Rush!
+            </p>
+            `,
+            images: ['images/wr/img0.png',"images/wr/img1.png","images/wr/img2.png","images/wr/img3.png"],
+            video: 'images/wr/video0.mp4',
+            link_ios: 'https://apps.apple.com/us/app/wedding-rush-3d/id1547766347',
+            link_aos: 'https://play.google.com/store/apps/details?hl=en&id=com.oskankayirci.weddingrush',
+            link_github: '' // Github linki yoksa boş bırakılır.
+        },
+        '5': {
             title: 'Survival Challange: 456 Master',
             description: `
             <p>Are you ready for the ultimate adventure? Welcome to Survival Challenge, where you’ll face intense inspired tasks, thrilling games, and the ultimate test of strategy and courage. Outsmart your opponents, master every challenge, and prove you’re the true mastermind in this epic game of survival!
@@ -222,9 +253,12 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>
             `,
             images: ['images/sc/img0.png',"images/sc/img1.png","images/sc/img2.png","images/sc/img3.png"],
-            video: 'images/sc/video0.mp4'
+            video: 'images/sc/video0.mp4',
+            link_ios: '',
+            link_aos: 'https://play.google.com/store/apps/details?id=com.flatgames.dalgona.survival.challenge',
+            link_github: '' // Github linki yoksa boş bırakılır.
         },
-        '5': {
+        '6': {
             title: 'Borderland Defender - SWAT Sim',
             description: `
             <p>Thrust into the role of a virtual border police patrol, you’ll be on the frontline defending America. This police patrol simulator will plunge you into the heart of border security. As the Borderland Defender, your SWAT police duty is clear: defend the borders at all costs.
@@ -242,9 +276,12 @@ document.addEventListener('DOMContentLoaded', function() {
             </ul>
             `,
             images: ['images/bd/img0.png',"images/bd/img1.png","images/bd/img2.png"],
-            video: 'images/bd/video0.mp4'
+            video: 'images/bd/video0.mp4',
+            link_ios: '',
+            link_aos: 'https://play.google.com/store/apps/details?id=com.flatgames.borderlandpatrol',
+            link_github: '' // Github linki yoksa boş bırakılır.
         },
-        '6': {
+        '7': {
             title: 'Garage Grind',
             description: `
             <p>Get ready to soar through the skies in style with Garage Grind - Plane Tuning, the adrenaline-pumping airplane modification game that puts you in the pilot's seat of your dreams! Take your passion for car tuning to new heights as you dive into the thrilling world of customizing and upgrading your very own aircraft.
@@ -263,16 +300,22 @@ document.addEventListener('DOMContentLoaded', function() {
             </p>
             `,
             images: ['images/gg/img0.png',"images/gg/img1.png","images/gg/img2.png","images/gg/img3.png"],
-            video: 'images/gg/video0.mp4'
+            video: 'images/gg/video0.mp4',
+            link_ios: '',
+            link_aos: 'https://play.google.com/store/apps/details?id=com.FunjitsuGames.Brix',
+            link_github: '' // Github linki yoksa boş bırakılır.
         },
-        '7': {
+        '8': {
             title: 'Roller Coaster Level Up',
             description: '<p>Will you be able to bring your passengers to the end of each attraction? Each level has its own challenges. You will have to drive your wagons to avoid the bombs and impasses that will unfold during the ride. Don\'t forget to gather the people on your way if you want the reward to be higher, as passengers will be waiting for you along the loopings.\n' +
                 '</p>',
             images: ['images/rc/img0.png'],
             video: 'images/rc/video0.mp4',
+            link_ios: '',
+            link_aos: '',
+            link_github: '' // Github linki yoksa boş bırakılır.
         },
-        '8': {
+        '9': {
             title: 'Pixel Shredder',
             description: `
             <p>Control a cute shredder and shred colorful objects into tiny little pixels! Objects will jump and dance on the gears as they are shred into pieces and slowly disappear in your shredders mouth! This a feast of colors and pixels! So satisfying!
@@ -291,8 +334,11 @@ document.addEventListener('DOMContentLoaded', function() {
             `,
             images: ['images/ps/img0.png'],
             video: 'images/ps/video0.mp4',
+            link_ios: '',
+            link_aos: '',
+            link_github: '' // Github linki yoksa boş bırakılır.
         },
-        '9': {
+        '10': {
             title: 'World Puzzle Case Project',
             description: `
             <p>⚒️ This gameplay video demonstrates a word game developed using the Trie data structure. The objective is to find hidden words within a grid of letters. The Trie data structure optimizes word search operations, enabling quick results. The visual assets used in the game were generated using artificial intelligence. This project is a test case study conducted for a company and was developed in 2 days. It includes several applications of the game development process. For those interested in accessing the source files, please visit the GitHub repository: https://lnkd.in/d88SntZK. For more detailed information, please refer to the README file in the repository. 
@@ -300,22 +346,46 @@ document.addEventListener('DOMContentLoaded', function() {
             `,
             images: ['images/wp/img0.png'],
             video: 'images/wp/video0.mp4',
+            link_ios: '',
+            link_aos: '',
+            link_github: 'https://github.com/SemihKC94/Happy-Hour-Test-Case.git' // Github linki yoksa boş bırakılır.
         },
-        '10': {
+        '11': {
             title: 'Bus Out Case Project with Level Editor',
             description: `
             <p>A grid-based puzzle game where players maneuver snake-like buses to their designated destinations to pick up passengers. The project features a robust, custom-built Level Editor for creating and managing all aspects of a level.</p>
             `,
             images: ['images/bo/img0.png','images/bo/img1.png','images/bo/img2.png'],
             video: 'images/bo/video0.mp4',
+            link_ios: '',
+            link_aos: '',
+            link_github: 'https://github.com/SemihKC94/bus-out-8GreatGames-Case.git' // Github linki yoksa boş bırakılır.
         },
-        '11': {
+        '12': {
             title: 'Deterministic Roulette Case Project',
             description: `
             <p>This project is a comprehensive implementation of a classic roulette game, incorporating all standard features and betting options. Notably, it includes a deterministic mode, allowing players to pre-select the winning number. The game meticulously tracks player statistics, including spin count, wins, losses, total winnings, and total losses, all of which are accessible via a dedicated statistics interface. Furthermore, player progress is persistently stored using a custom-designed save system.
             </p>`,
             images: ['images/dr/img0.png','images/dr/img1.png','images/dr/img2.png'],
             video: 'images/dr/video0.mp4',
+            link_ios: '',
+            link_aos: '',
+            link_github: 'https://github.com/SemihKC94/Deterministic-Roulette-Game.git' // Github linki yoksa boş bırakılır.
+        },
+        '13': {
+            title: 'Unity Editor Kanban Board System',
+            description: `
+            <p>Welcome to the Unity Editor Kanban Board System! This is a powerful, customizable, and intuitive task management tool built directly within the Unity Editor. Designed to streamline your game development workflow, it helps teams track tasks, manage progress, and assign responsibilities without ever leaving your development environment.
+            </p>
+            <p>
+            This project is currently in its early stages of development, but it's already a highly functional tool that aims to evolve into a comprehensive solution for game development task management. Your feedback and contributions are always welcome!
+            </p>
+            `,
+            images: ['images/kb/img0.png','images/kb/img1.png','images/kb/img2.png','images/kb/img3.png','images/kb/img4.png'],
+            video: 'images/kb/video0.mp4',
+            link_ios: '',
+            link_aos: '',
+            link_github: 'https://github.com/SemihKC94/kanban-board-system.git' // Github linki yoksa boş bırakılır.
         },
     };
 
@@ -331,6 +401,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const swiperWrapper = modal.querySelector('.swiper-wrapper');
             swiperWrapper.innerHTML = ''; // Önceki slaytları temizle
+
+            // YENİ: LİNKLERİ KONTROL EDEREK BUTONLARI OLUŞTURMA
+            modalLinksContainer.innerHTML = ''; // Önceki butonları temizle
+            if (project.link_ios) {
+                modalLinksContainer.innerHTML += `<a href="${project.link_ios}" target="_blank" class="link-button"><i class="fab fa-apple"></i> App Store</a>`;
+            }
+            if (project.link_aos) {
+                modalLinksContainer.innerHTML += `<a href="${project.link_aos}" target="_blank" class="link-button"><i class="fab fa-google-play"></i> Google Play</a>`;
+            }
+            if (project.link_github) {
+                modalLinksContainer.innerHTML += `<a href="${project.link_github}" target="_blank" class="link-button"><i class="fab fa-github"></i> GitHub</a>`;
+            }
 
 // Önce görselleri ekle
             // Varsa videoyu ilk slayt olarak ekle
